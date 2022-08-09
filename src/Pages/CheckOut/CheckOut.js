@@ -7,7 +7,7 @@ import swal from "sweetalert";
 const CheckOut = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    swal("Good job!", "You clicked the button!", "success");
+    swal("Thank You!", "Your Order is confirmed!", "success");
   };
   return (
     <Form onSubmit={handleSubmit} className="container w-50 text-start my-5">

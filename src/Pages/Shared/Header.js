@@ -33,13 +33,9 @@ const Header = () => {
               title="Products"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item className="text-light" href="#action/3.1">
-                Shoes
-              </NavDropdown.Item>
-              <NavDropdown.Item className="text-light" href="#action/3.2">
-                Watch
-              </NavDropdown.Item>
-              <NavDropdown.Item className="text-light" href="#action/3.3">
+              <NavDropdown.Item href="#action/3.1">Shoes</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Watch</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
                 Mobile Phone
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Head Phone</NavDropdown.Item>
