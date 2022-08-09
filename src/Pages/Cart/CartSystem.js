@@ -37,8 +37,8 @@ const CartSystem = ({ cart, name, ...props }) => {
             {/* {cart?.map((crt) => ( */}
             <div class="row">
               <div class="col-md-4 center-item mx-auto">
-                <img src="#" alt="" />
-                <h5>Product 1</h5>
+                <img src={cart?.image} alt="" />
+                <h5>{cart?.name}</h5>
               </div>
               <div class="col-md-4 center-item">
                 <div class="input-group number-spinner">

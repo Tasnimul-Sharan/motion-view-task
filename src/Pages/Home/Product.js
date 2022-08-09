@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import useCart from "../../Hoooks/useCart";
 
-const Product = ({ product }) => {
-  const [cart, setCart] = useCart(product);
-  // const [cart, setCart] = useState([]);
-  const handleAddToCart = (product) => {
-    setCart(product);
-    console.log(product);
-  };
-
+const Product = ({ product, handleAddToCart }) => {
   const { name, regular_price, sale_price, stock, image } = product;
   // console.log(productImage);
   return (

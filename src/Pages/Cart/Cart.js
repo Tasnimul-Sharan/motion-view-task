@@ -36,20 +36,11 @@ const options = [
   // },
 ];
 
-const Cart = () => {
-  // let total = 0;
-  // let shipping = 0;
-  // let quantity = 0;
-  // for (const product of cart) {
-  //   quantity = quantity + product.quantity;
-  //   total = total + product.price * product.quantity;
-  //   shipping = shipping + product.shipping;
-  // }
-
+const Cart = ({ cart }) => {
   return (
     <>
       {options.map((props, idx) => (
-        <CartSystem key={idx} {...props} />
+        <CartSystem cart={cart} key={idx} {...props} />
       ))}
     </>
   );
